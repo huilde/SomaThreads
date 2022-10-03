@@ -11,5 +11,5 @@ add_executable(
   src/main.cpp
   src/matrix.cpp
 )
-               
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")    
 target_compile_features(smmult PUBLIC cxx_std_17)
